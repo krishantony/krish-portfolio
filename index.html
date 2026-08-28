@@ -1,0 +1,455 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krish Antony | Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Dual Custom Interactive Mouse Cursor (Desktop) -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="ambient-cursor-glow" id="ambientCursorGlow"></div>
+
+    <!-- Top Scroll Progress Line -->
+    <div class="scroll-progress-line" id="scrollProgressLine"></div>
+
+    <!-- Background Grid & Soft Ambient Lighting -->
+    <div class="bg-mesh-grid"></div>
+    <div class="ambient-lights">
+        <div class="ambient-light light-1"></div>
+        <div class="ambient-light light-2"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header>
+        <a href="#home" class="brand-logo">
+            <div class="logo-badge">
+                <img src="logo.png" alt="Code Logo">
+            </div>
+            <div class="logo-text">Portfolio<span>.</span></div>
+        </a>
+
+        <ul class="nav-links-wrap" id="navLinksWrap">
+            <li><a href="#home" class="nav-item-link active">Home</a></li>
+            <li><a href="#about" class="nav-item-link">About</a></li>
+            <li><a href="#skills" class="nav-item-link">Skills</a></li>
+            <li><a href="#projects" class="nav-item-link">Projects</a></li>
+            <li><a href="#contact" class="nav-item-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <!-- Theme Toggle (Dark / Light) -->
+            <button class="action-btn" id="themeSwitchBtn" title="Toggle Theme" aria-label="Toggle Theme">
+                <i class="fa-solid fa-sun"></i>
+            </button>
+
+            <!-- Mobile Hamburger -->
+            <button class="action-btn mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section scroll-reveal" id="home">
+        <div class="hero-content">
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                <span>Aspiring Software & Web Developer</span>
+            </div>
+
+            <!-- Customized Hero Title -->
+            <h1 class="hero-main-title">
+                Hi I am <span class="highlight-name">KRISH ANTONY</span>
+            </h1>
+
+            <div class="hero-role-wrapper">
+                <span>Passionate about</span>
+                <span class="typewriter-target" id="typewriterDynamic"></span>
+            </div>
+
+            <!-- Customized Hero Summary -->
+            <p class="hero-summary">
+                A passionate college student and aspiring software & web developer, interested in building creative, interactive, and user-friendly applications while continuously learning and exploring modern technologies.
+            </p>
+
+            <div class="hero-cta-buttons">
+                <a href="#contact" class="btn-standard btn-primary-standard">
+                    <i class="fa-solid fa-paper-plane"></i> Get In Touch
+                </a>
+                <a href="#projects" class="btn-standard btn-glass-standard">
+                    <i class="fa-solid fa-laptop-code"></i> View Projects
+                </a>
+            </div>
+        </div>
+
+        <!-- Hero Visual: Portrait with Glowing Halo and Chips -->
+        <div class="hero-visual">
+            <div class="avatar-halo-box">
+                <div class="avatar-orbit-track"></div>
+                <div class="avatar-ambient-glow"></div>
+
+                <div class="avatar-portrait-wrap">
+                    <img src="profile.jpg" alt="Krish Antony Profile Portrait" class="profile-portrait-img">
+                </div>
+
+                <!-- Floating Interactive Chips -->
+                <div class="floating-chip pos-top">
+                    <div class="chip-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div>
+                        <div class="chip-label">Focus</div>
+                        <div class="chip-value">Coding & Web</div>
+                    </div>
+                </div>
+
+                <div class="floating-chip pos-bottom">
+                    <div class="chip-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <div>
+                        <div class="chip-label">Mindset</div>
+                        <div class="chip-value">Creative Thinker</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-title-wrap scroll-reveal">
+            <span class="section-pill-tag"><i class="fa-solid fa-user"></i> Introduction</span>
+            <h2 class="section-heading-h2">About Me</h2>
+            <p class="section-subtext">A brief overview of my background, journey, and interests.</p>
+        </div>
+
+        <div class="about-centered-wrap scroll-reveal">
+            <!-- Full Width About Card -->
+            <div class="card-spotlight about-large-card">
+                <p>
+                    Hello! I am a college student and aspiring software developer who enjoys coding, web designing, and building creative projects. I have a good foundation in C, Python, Java, HTML, and web development, and I’m constantly working on improving my technical and problem-solving skills.
+                </p>
+                <p>
+                    I enjoy exploring new technologies, creating interactive and user-friendly websites, and turning ideas into practical projects. As a student, I’m focused on learning, experimenting, and growing my skills through hands-on experience.
+                </p>
+
+                <!-- Custom 4 Bullets -->
+                <div class="feature-check-grid">
+                    <div class="check-pill">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <span>Creative</span>
+                    </div>
+                    <div class="check-pill">
+                        <i class="fa-solid fa-brain"></i>
+                        <span>Problem Solving</span>
+                    </div>
+                    <div class="check-pill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Coding</span>
+                    </div>
+                    <div class="check-pill">
+                        <i class="fa-solid fa-palette"></i>
+                        <span>Web Designing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-title-wrap scroll-reveal">
+            <span class="section-pill-tag"><i class="fa-solid fa-sliders"></i> Proficiency</span>
+            <h2 class="section-heading-h2">Technical Skills</h2>
+            <p class="section-subtext">Core languages, tools, and technical areas I work with.</p>
+        </div>
+
+        <div class="skills-grid-clean">
+            <!-- HTML5 -->
+            <div class="skill-card-clean scroll-reveal">
+                <div class="skill-card-head">
+                    <div class="skill-badge-icon" style="color: #e34f26;">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <div class="skill-text-info">
+                        <h3>HTML5</h3>
+                        <p>Web Structure & Semantics</p>
+                    </div>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-percent="95%"></div>
+                </div>
+                <div class="skill-data-label">
+                    <span>Proficiency</span>
+                    <span class="pct">95%</span>
+                </div>
+            </div>
+
+            <!-- CSS3 & Web Design -->
+            <div class="skill-card-clean scroll-reveal">
+                <div class="skill-card-head">
+                    <div class="skill-badge-icon" style="color: #2563eb;">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+                    <div class="skill-text-info">
+                        <h3>CSS3 & Web Design</h3>
+                        <p>Responsive Layouts & Styling</p>
+                    </div>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-percent="90%"></div>
+                </div>
+                <div class="skill-data-label">
+                    <span>Proficiency</span>
+                    <span class="pct">90%</span>
+                </div>
+            </div>
+
+            <!-- Python -->
+            <div class="skill-card-clean scroll-reveal">
+                <div class="skill-card-head">
+                    <div class="skill-badge-icon" style="color: #38bdf8;">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <div class="skill-text-info">
+                        <h3>Python</h3>
+                        <p>Programming & Problem Solving</p>
+                    </div>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-percent="88%"></div>
+                </div>
+                <div class="skill-data-label">
+                    <span>Proficiency</span>
+                    <span class="pct">88%</span>
+                </div>
+            </div>
+
+            <!-- C Programming -->
+            <div class="skill-card-clean scroll-reveal">
+                <div class="skill-card-head">
+                    <div class="skill-badge-icon" style="color: #60a5fa;">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="skill-text-info">
+                        <h3>C Language</h3>
+                        <p>Core Logic & Data Structures</p>
+                    </div>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-percent="82%"></div>
+                </div>
+                <div class="skill-data-label">
+                    <span>Proficiency</span>
+                    <span class="pct">82%</span>
+                </div>
+            </div>
+
+            <!-- Java -->
+            <div class="skill-card-clean scroll-reveal">
+                <div class="skill-card-head">
+                    <div class="skill-badge-icon" style="color: #ea580c;">
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                    <div class="skill-text-info">
+                        <h3>Java</h3>
+                        <p>Object-Oriented Programming</p>
+                    </div>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-percent="80%"></div>
+                </div>
+                <div class="skill-data-label">
+                    <span>Proficiency</span>
+                    <span class="pct">80%</span>
+                </div>
+            </div>
+
+            <!-- JavaScript & Web Dev -->
+            <div class="skill-card-clean scroll-reveal">
+                <div class="skill-card-head">
+                    <div class="skill-badge-icon" style="color: #f7df1e;">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <div class="skill-text-info">
+                        <h3>JavaScript & Web Dev</h3>
+                        <p>Interactive Client-Side Features</p>
+                    </div>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-percent="85%"></div>
+                </div>
+                <div class="skill-data-label">
+                    <span>Proficiency</span>
+                    <span class="pct">85%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-title-wrap scroll-reveal">
+            <span class="section-pill-tag"><i class="fa-solid fa-folder-open"></i> Portfolio</span>
+            <h2 class="section-heading-h2">Featured Project</h2>
+            <p class="section-subtext">Highlights of my creative and practical development work.</p>
+        </div>
+
+        <div class="projects-showcase-centered scroll-reveal">
+            <!-- Project 1 (Featured) -->
+            <div class="project-card-clean featured-spotlight-project">
+                <div class="project-header-preview">
+                    <i class="fa-solid fa-laptop-code project-preview-glyph"></i>
+                    <span class="project-type-tag">Personal Project</span>
+                </div>
+                <div class="project-detail-body">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>A responsive, modern personal portfolio website featuring interactive mouse animations, custom themes, and clean presentation of skills and projects.</p>
+                    <div class="project-tags-row">
+                        <span class="ptag">HTML5</span>
+                        <span class="ptag">CSS3</span>
+                        <span class="ptag">JavaScript</span>
+                        <span class="ptag">Web Design</span>
+                    </div>
+                    <div class="project-actions-row">
+                        <a href="#home" class="proj-action-link primary-color">Live View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="#contact" class="proj-action-link">Contact Me <i class="fa-solid fa-paper-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-title-wrap scroll-reveal">
+            <span class="section-pill-tag"><i class="fa-solid fa-envelope"></i> Contact</span>
+            <h2 class="section-heading-h2">Get in Touch</h2>
+            <p class="section-subtext">Have a question or want to connect? Feel free to reach out anytime!</p>
+        </div>
+
+        <div class="contact-layout-grid">
+            <!-- Left Info Panel -->
+            <div class="contact-info-panel scroll-reveal">
+                <h3>Let's Connect</h3>
+                <p>Feel free to reach out directly through email, phone, or any of the platforms below.</p>
+
+                <div class="contact-direct-items">
+                    <div class="direct-box">
+                        <div class="direct-box-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="direct-box-info">
+                            <span>Email</span>
+                            <a href="mailto:krishantonyj@gmail.com">krishantonyj@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="direct-box">
+                        <div class="direct-box-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="direct-box-info">
+                            <span>Phone</span>
+                            <a href="tel:6369123175">6369123175</a>
+                        </div>
+                    </div>
+
+                    <div class="direct-box">
+                        <div class="direct-box-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="direct-box-info">
+                            <span>Location</span>
+                            <a href="#">India</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links-grid">
+                    <a href="mailto:krishantonyj@gmail.com" class="social-round-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:6369123175" class="social-round-btn" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://github.com" target="_blank" class="social-round-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="social-round-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Right Contact Form with Krish Antony & krishantonyj@gmail.com Placeholders -->
+            <form class="contact-form-panel scroll-reveal" id="contactFormStandard">
+                <div class="form-dual-row">
+                    <div class="form-input-group">
+                        <label for="uName">Your Name</label>
+                        <input type="text" id="uName" class="input-standard" placeholder="Krish Antony" required>
+                    </div>
+                    <div class="form-input-group">
+                        <label for="uEmail">Your Email</label>
+                        <input type="email" id="uEmail" class="input-standard" placeholder="krishantonyj@gmail.com" required>
+                    </div>
+                </div>
+
+                <div class="form-input-group">
+                    <label for="uSubject">Subject</label>
+                    <input type="text" id="uSubject" class="input-standard" placeholder="Project / Connection Inquiry" required>
+                </div>
+
+                <div class="form-input-group">
+                    <label for="uMessage">Message</label>
+                    <textarea id="uMessage" class="input-standard" placeholder="Hello Krish! I would like to get in touch with you..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-standard btn-primary-standard" style="width: 100%;">
+                    <i class="fa-solid fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content-wrap">
+            <a href="#home" class="brand-logo">
+                <div class="logo-badge">
+                    <img src="logo.png" alt="Logo">
+                </div>
+                <div class="logo-text">Portfolio<span>.</span></div>
+            </a>
+
+            <div class="footer-copy-text">
+                © 2026 Krish Antony. Built with passion, code & creativity.
+            </div>
+
+            <a href="#home" class="scroll-top-btn" title="Back to top" aria-label="Back to top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Popup -->
+    <div class="toast-msg-box" id="toastMsgBox">
+        <i class="fa-solid fa-circle-check"></i>
+        <span class="toast-inner-text">Message sent successfully!</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
